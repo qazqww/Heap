@@ -4,27 +4,58 @@ using UnityEngine;
 
 public class Test : MonoBehaviour
 {
-    MyHeap newHeap = new MyHeap();
+    ArrayMinHeap minHeap = new ArrayMinHeap();
+    ArrayMaxHeap maxHeap = new ArrayMaxHeap();
 
     void Start()
     {
-        newHeap.Add(1);
-        newHeap.Add(2);
-        newHeap.Add(3);
-        newHeap.Add(4);
-        newHeap.Add(5);
-        newHeap.Add(8);
-        newHeap.Add(8);
+        minHeap.Add(3);
+        minHeap.Add(2);
+        minHeap.Add(7);
+        minHeap.Add(5);
+        minHeap.Add(11);
+        minHeap.Add(13);
+        minHeap.Add(1);
+        minHeap.Display();
 
-        newHeap.Display();
+        Debug.Log(minHeap.Pop());
+        minHeap.Display();
+        Debug.Log(minHeap.Pop());
+        minHeap.Display();
+        Debug.Log(minHeap.Pop());
+        minHeap.Display();
+        Debug.Log(minHeap.Pop());
+        minHeap.Display();
+        Debug.Log(minHeap.Pop());
+        minHeap.Display();
+        Debug.Log(minHeap.Pop());
+        minHeap.Display();
+        Debug.Log(minHeap.Pop());
+        minHeap.Display();
 
-        Debug.Log(newHeap.Pop());
-        Debug.Log(newHeap.Pop());
-        Debug.Log(newHeap.Pop());
-        Debug.Log(newHeap.Pop());
-        Debug.Log(newHeap.Pop());
-        Debug.Log(newHeap.Pop());
-        Debug.Log(newHeap.Pop());
+        //maxHeap.AddNum(3);
+        //maxHeap.AddNum(2);
+        //maxHeap.AddNum(7);
+        //maxHeap.AddNum(5);
+        //maxHeap.AddNum(11);
+        //maxHeap.AddNum(13);
+        //maxHeap.AddNum(1);
+        //maxHeap.Display();
+
+        //Debug.Log(maxHeap.Pop());
+        //maxHeap.Display();
+        //Debug.Log(maxHeap.Pop());
+        //maxHeap.Display();
+        //Debug.Log(maxHeap.Pop());
+        //maxHeap.Display();
+        //Debug.Log(maxHeap.Pop());
+        //maxHeap.Display();
+        //Debug.Log(maxHeap.Pop());
+        //maxHeap.Display();
+        //Debug.Log(maxHeap.Pop());
+        //maxHeap.Display();
+        //Debug.Log(maxHeap.Pop());
+        //maxHeap.Display();
     }
 
     void Update()
